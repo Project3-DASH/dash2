@@ -115,9 +115,11 @@ class Products extends Component {
 				{
 					showModal ?
 					<Modals onClose={this.hideModal}>
-						Share Your Code 
+						<p> </p>
+
+						Share With Friends 
 						<div>
-							<a href={'https://twitter.com/intent/tweet/?text=Share%20my%20code%20and%20we%20can%20win%20$15%20to%20Starbucks%20&' + 'url=https://www.google.com/' + md5(289102843092813)}  className="twitter-share-button" data-size="large" data-via="dash">Tweet</a>
+							<a href={'https://twitter.com/intent/tweet/?text=Share%20my%20code%20and%20we%20can%20win%20$15%20to%20Starbucks%20&' + 'url=https:localhost:3000/' + md5(289102843092813)} className="twitter-share-button" data-size="large" data-via="dash">Tweet</a>
     					</div>
           </Modals> : null}
 
