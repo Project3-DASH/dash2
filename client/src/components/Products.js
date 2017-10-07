@@ -85,7 +85,7 @@ class Products extends Component {
 		const {showModal, showLazyModal} = this.state;
 		return(
 			<div>
-				<h1> className="productTitle">Popular Products</h1>
+				<h1 className="productTitle">Popular Products</h1>
 				{
 					this.state.productList &&
 					this.state.productList.map((product, index) => 
