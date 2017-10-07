@@ -35,12 +35,10 @@ const user = "root"
 const pswd = ""
 const dbname = "dashdb"
 
-
 if(process.env.JAWSDB_URL){
     connection = mysql.createPool(process.env.JAWSDB_URL);
 }
 else{
-
 const pool = mysql.createPool({
     host: host,
     user: user,
@@ -48,7 +46,7 @@ const pool = mysql.createPool({
     port: "3306",
     database: dbname
 });
-}
+]
 
 
 
