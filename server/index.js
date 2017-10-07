@@ -30,10 +30,13 @@ app.set('port', (process.env.PORT || 3001));
 
 // conect API into MySql db
 
+
+
 const host = "localhost"
 const user = "root"
 const pswd = ""
 const dbname = "dashdb"
+
 
 if(process.env.JAWSDB_URL){
     connection = mysql.createPool(process.env.JAWSDB_URL);
@@ -46,7 +49,7 @@ const pool = mysql.createPool({
     port: "3306",
     database: dbname
 });
-]
+}
 
 
 

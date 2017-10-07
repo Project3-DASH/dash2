@@ -16,6 +16,11 @@ class Products extends Component {
 		}
 	}
 
+// headers : { 
+// 'Content-Type': 'application/json',
+// 'Accept': 'application/json'
+// }
+
 	componentWillMount(){
 		let productList =  this.fetchProducts();
 		// var temp = [
