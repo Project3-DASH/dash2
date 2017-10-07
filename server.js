@@ -66,9 +66,15 @@ connection.connect((err) => {
 
 // app.use('/', index);
 
-
-
-
-
+ if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: 'localhost'
+    user:'root',
+    password:"",
+    database: 'dashdb'
+  });
+ };
 
 app.listen(port, () => console.log("Listening on port " + port));
