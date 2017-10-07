@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Modals} from './Modals';
-import {ShareButtons, ShareCounts, generateShareIcon} from 'react-share';
 
 
 class Modal extends Component {
@@ -36,14 +35,14 @@ class Modal extends Component {
       <div className="app">
 
         <button onClick={this.showModal}>
-          Open Modal
+          // Open Modal
         </button>
-        &nbsp;Closes on mouse down or touch start events
+        // &nbsp;Closes on mouse down or touch start events
 
         <br />
 
         <button onClick={this.showLazyModal}>
-          Open Lazy Model
+          
         </button>
         &nbsp;Closes on mouse down or touch end events
 

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Modal from './Modal';
 import {Modals} from './Modals';
-import {ShareButtons, ShareCounts, generateShareIcon} from 'react-share';
 import './Products.css';
 import md5 from "md5";
 
@@ -85,7 +84,7 @@ class Products extends Component {
 		const {showModal, showLazyModal} = this.state;
 		return(
 			<div>
-				<h3 className="productTitle">Popular Contests</h3>
+				<h1 className="productTitle">Popular Products</h1>
 				{
 					this.state.productList &&
 					this.state.productList.map((product, index) => 
@@ -95,11 +94,12 @@ class Products extends Component {
 							</div>
 							<div>
 								<div className= "product_title">
-									Get 10 Friends to Share Your Link & You ALL Win {product.company.name}
-								</div>
-
-								<input type='email' ref='enteremail'className="email" placeholder='Add Your Email' required/>
-							      <div>
+									Get 10 Friends to Sign Up & You ALL Win </div>
+								
+								<div>
+									<p>      </p>
+									<p>      </p>
+									<input type='email' ref='enteremail'className="email" placeholder='Add Your Email' required/>
 							        <button type="submit" onClick={this.showModal} className="loginbutton">Enter</button>
 							      </div>
 

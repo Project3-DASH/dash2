@@ -13,7 +13,8 @@ class App extends Component {
             <Navbar />
             {/* Jumbotron */}
 		        <div className="jumbotron text-center">
-		          <h3><em>Find & Win Cool Products</em></h3>
+		          <h1> <em> Win New Products </em> </h1>
+              <h5> Meet Dash, tell your friends and you all get products for free! It's really as simple as that. </h5>
 		        </div>
 			<Body />
             <Footer />

@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ReactPageClick } from './ModalClick';
-import {ShareButtons, ShareCounts, generateShareIcon} from 'react-share';
 
 
 const styles = {
@@ -33,14 +32,6 @@ const styles = {
   }
 };
 
-const {
-  FacebookShareButton,
-  GooglePlusShareButton,
-  LinkedinShareButton,
-  TwitterShareButton,
-  PinterestShareButton,
-  EmailShareButton,
-} = ShareButtons;
 
 export const Modals = ({onClose, notifyOnTouchEnd, ...rest}) => (
   <div>

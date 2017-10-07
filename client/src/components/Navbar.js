@@ -7,19 +7,27 @@ import './Navbar.css';
 //   color: 'white',
 // };
 
+ var icon = (
+            <span class="logo">
+                  <a href="/">
+                    <img src="/awesome-logo.png" height="33" width="120" alt="text here" /></a>
+                </span>
+              );
+
 class Navbar extends Component {
 	render() {
 		return(
 
-    
         <nav brand='React-Bootstrap' inverse toggleNavKey={0}> 
             <nav right eventKey={0}>
+                <nav brand={icon} toggleNavKey={0}>
                 <form className='navbar-form' action="">
             
                     <input type='text' placeholder='email' />{' '}
                     <input type='text' placeholder='password' />{' '}
                     <button bsStyle='success' type='submit'>Sign in</button>
                 </form>
+                </nav>
             </nav>
         </nav>
 		)
