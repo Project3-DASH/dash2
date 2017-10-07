@@ -46,10 +46,10 @@ const pool = mysql.createPool({
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
   connection = mysql.createConnection({
-    host: 'gzp0u91edhmxszwf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-    user:'ahpqraledgrwn7wx',
-    password: 'n5lmgsnlna59gsgx',
-    database: 'ljp5m42g4v3c087w'
+    host: 'localhost',
+    user:'root',
+    password: "",
+    database: 'dashbb'
   });
  };
 
