@@ -42,6 +42,17 @@ const pool = mysql.createPool({
     database: dbname
 });
 
+ if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: 'localhost'
+    user:'root',
+    password:"",
+    database: 'dashdb'
+  });
+ };
+
 // check if API works correctly 
 
 app.get('/', (req, res) => {
