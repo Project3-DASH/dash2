@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './Navbar.css';
+import logo from './logo.svg';
 // import LogoImg from 'img/logo.png';
 
 // const NavbarStyle = {
@@ -7,12 +8,6 @@ import './Navbar.css';
 //   color: 'white',
 // };
 
- var icon = (
-            <span class="logo">
-                  <a href="/">
-                    <img src="/awesome-logo.png" height="33" width="120" alt="text here" /></a>
-                </span>
-              );
 
 class Navbar extends Component {
 	render() {
@@ -20,7 +15,7 @@ class Navbar extends Component {
 
         <nav brand='React-Bootstrap' inverse toggleNavKey={0}> 
             <nav right eventKey={0}>
-                <nav brand={icon} toggleNavKey={0}>
+                   <img src={logo} className="App-logo" alt="logo" />     
                 <form className='navbar-form' action="">
             
                     <input type='text' placeholder='email' />{' '}
@@ -29,7 +24,7 @@ class Navbar extends Component {
                 </form>
                 </nav>
             </nav>
-        </nav>
+        // </nav>
 		)
 	}
 

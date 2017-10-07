@@ -3,6 +3,7 @@ import Modal from './Modal';
 import {Modals} from './Modals';
 import './Products.css';
 import md5 from "md5";
+import Tweet from './tweet.svg';
 
 class Products extends Component {
 	constructor(props){
@@ -84,7 +85,7 @@ class Products extends Component {
 		const {showModal, showLazyModal} = this.state;
 		return(
 			<div>
-				<h1 className="productTitle">Popular Products</h1>
+				<h1> className="productTitle">Popular Products</h1>
 				{
 					this.state.productList &&
 					this.state.productList.map((product, index) => 
